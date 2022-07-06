@@ -1,6 +1,8 @@
 import urllib.request   
 
-website = input("website address:")
+website = input("https://")
 
-print(urllib.request.urlopen(str(website)).getcode())
+#Check if the url works
+
+print(urllib.request.urlopen(f'https://{website}').getcode())
 
